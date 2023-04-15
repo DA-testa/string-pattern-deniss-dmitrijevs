@@ -10,7 +10,7 @@ def read_input():
         pattern = input()
         text = input()
     elif "f" in in_type.lower():
-        file_name = str(input())
+        file_name = '06'
         path = "tests/" + file_name
         with open(path, 'r') as file:
             pattern = file.readline()
