@@ -38,8 +38,8 @@ def get_occurrences(pattern, text):
     pattern_length = len(pattern)
     pattern_hash = get_text_hash(pattern)
     # and return an iterable variable
-    for i in range(0, len(text), pattern_length):
-        if get_text_hash(text[i:i+pattern_length]) == pattern_hash:
+    for i in range(0, len(text)):
+        if get_text_hash(text[i:i + pattern_length]) == pattern_hash:
             instance_indices.append(i)
     return instance_indices
 
